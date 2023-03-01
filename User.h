@@ -8,12 +8,16 @@ class User
 {
 public:
 	User() = default;
-	User(std::string& n, std::string& u, std::string& p) : name(n), username(u), password(p)
-	{
-	}
 
 	int getID();
-	std::string getName();
+	std::string& getName();
+	std::string& getUserame();
+	std::string& getPassword();
+
+	void setID(int i);
+	void setName(std::string& n);
+	void setUsername(std::string& u);
+	void setPassword(std::string& p);
 
 	bool inputNameForNewUser();
 	bool inputUsernameForNewUser();

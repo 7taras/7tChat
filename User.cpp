@@ -5,9 +5,39 @@ int User::getID()
     return id;
 }
 
-std::string User::getName()
+std::string& User::getName()
 {
     return name;
+}
+
+std::string& User::getUserame()
+{
+    return username;
+}
+
+std::string& User::getPassword()
+{
+    return password;
+}
+
+void User::setID(int i)
+{
+    id = i;
+}
+
+void User::setName(std::string& n)
+{
+    name = n;
+}
+
+void User::setUsername(std::string& u)
+{
+    username = u;
+}
+
+void User::setPassword(std::string& p)
+{
+    password = p;
 }
 
 bool User::inputNameForNewUser()
